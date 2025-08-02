@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
-# *************************************************************** #
-# This version of the neural network includes TWO hidden layers  #
-# instead of ONE like the original version.                      #
+# ************************************************************* #
+# This version of the neural network includes TWO hidden layers #
+# instead of ONE like the original version.                     #
 #                                                               #
 # Key Differences from the First Version:                       #
 # ------------------------------------------------------------- #
@@ -12,7 +12,7 @@ from matplotlib import pyplot as plt
 #    - This version:                                            #
 #      Input -> Hidden Layer 1 (64 neurons)                     #
 #             -> Hidden Layer 2 (32 neurons)                    #
-#             -> Output Layer (10 neurons)                     #
+#             -> Output Layer (10 neurons)                      #
 #                                                               #
 # 2. Forward Propagation:                                       #
 #    - Two activation steps using ReLU instead of one           #
@@ -29,7 +29,7 @@ from matplotlib import pyplot as plt
 #    - Deeper network allows for more complex learning          #
 #    - Typically results in higher training and validation acc. #
 #                                                               #                                   #
-# *************************************************************** #
+# ************************************************************* #
 
 #load the training data and shuffle it
 data = pd.read_csv('train.csv')
@@ -155,6 +155,7 @@ def gradient_descent(X, Y, alpha, iterations):
 
             #print("Validation Accuracy:", get_accuracy(val_preds, Y_dev))
     return W1, b1, W2, b2, W3, b3
+
 
 #run training
 W1, b1, W2, b2, W3, b3 = gradient_descent(X_train, Y_train, 0.10, 500)
