@@ -12,6 +12,8 @@ This repository contains small **AI and machine learning** projects focused on *
 * `number_recognition2.py` — improved version with better accuracy
 * `number_rec_performance.py` — performance + scaling analysis
 * `test.py` — tests predictions
+* <img width="994" height="522" alt="Screenshot 2026-05-01 at 1 38 36 PM" src="https://github.com/user-attachments/assets/899d870e-3a45-4815-bf2e-8acaffbc6ee9" />
+
 
 ### ⚡ Performance Notes
 
